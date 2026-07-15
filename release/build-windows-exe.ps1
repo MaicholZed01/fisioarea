@@ -9,13 +9,13 @@ $OutputDir = Join-Path $RootDir "target\release\windows"
 $IconPath = Join-Path $RootDir "src\main\resources\com\fisioarea\assets\fisioarea-icon.ico"
 
 Write-Host "== Fisioarea Windows EXE =="
+Write-Host "PowerShell version: $($PSVersionTable.PSVersion)"
+Write-Host "OS env: $env:OS"
+Write-Host "Runner OS: $env:RUNNER_OS"
 
-# Compatibile sia con PowerShell 5.1 sia con PowerShell 7.
-# In GitHub Actions il comando può passare da powershell.exe o pwsh.exe,
-# quindi non usiamo $IsWindows perché in PowerShell 5.1 non esiste.
-if ($env:OS -ne "Windows_NT") {
-    Write-Error "L'EXE Windows deve essere creato da Windows. OS rilevato: $env:OS"
-}
+# Non blocchiamo più la build su $IsWindows.
+# Su GitHub Actions il job gira già su windows-latest.
+# Su un sistema non Windows fallirà comunque jpackage --type exe in modo chiaro.
 
 if (-not (Get-Command mvn -ErrorAction SilentlyContinue)) {
     Write-Error "Maven non installato o non presente nel PATH."
