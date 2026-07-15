@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="720.0" prefWidth="1080.0"
+            stylesheets="@styles.css"
+            styleClass="auth-root"
+            xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.fisioarea.controller.RegisterController">
+
+    <left>
+        <VBox alignment="CENTER_LEFT" prefWidth="410.0" spacing="24.0" styleClass="auth-hero-secondary-flat">
+            <padding>
+                <Insets bottom="52.0" left="46.0" right="46.0" top="52.0" />
+            </padding>
+
+            <children>
+                <HBox alignment="CENTER_LEFT" spacing="12.0">
+                    <children>
+                        <Label text="F" styleClass="brand-mark" />
+                        <VBox spacing="0.0">
+                            <children>
+                                <Label text="Fisioarea" styleClass="brand-title-light" />
+                                <Label text="Nuovo account studio" styleClass="brand-subtitle-light" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+
+                <Region VBox.vgrow="ALWAYS" />
+
+                <VBox spacing="12.0">
+                    <children>
+                        <Label text="Configura il tuo studio in pochi passaggi."
+                               wrapText="true" styleClass="hero-title" />
+                        <Label text="Inserisci due volte l’email e scegli una password sicura per creare il tuo profilo."
+                               wrapText="true" styleClass="hero-text" />
+                    </children>
+                </VBox>
+
+                <VBox spacing="12.0">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" spacing="10.0" styleClass="hero-feature">
+                            <children>
+                                <Label text="1" styleClass="step-badge" />
+                                <Label text="Dati personali" styleClass="hero-feature-text" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="10.0" styleClass="hero-feature">
+                            <children>
+                                <Label text="2" styleClass="step-badge" />
+                                <Label text="Conferma email e password" styleClass="hero-feature-text" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="10.0" styleClass="hero-feature">
+                            <children>
+                                <Label text="3" styleClass="step-badge" />
+                                <Label text="Accesso alla dashboard" styleClass="hero-feature-text" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+
+                <Region VBox.vgrow="ALWAYS" />
+
+                <Label text="La conferma email riduce errori di digitazione senza usare internet."
+                       styleClass="hero-footer" wrapText="true" />
+            </children>
+        </VBox>
+    </left>
+
+    <center>
+        <ScrollPane fitToWidth="true" hbarPolicy="NEVER" styleClass="transparent-scroll">
+            <content>
+                <VBox alignment="CENTER" spacing="22.0" styleClass="auth-form-flat">
+                    <padding>
+                        <Insets bottom="48.0" left="66.0" right="66.0" top="48.0" />
+                    </padding>
+
+                    <children>
+                        <VBox alignment="CENTER_LEFT" maxWidth="500.0" spacing="8.0">
+                            <children>
+                                <Label text="Crea account" styleClass="page-title" />
+                                <Label text="Conferma email e password per completare la registrazione"
+                                       styleClass="page-subtitle" />
+                            </children>
+                        </VBox>
+
+                        <VBox maxWidth="500.0" spacing="14.0">
+                            <children>
+                                <Label fx:id="errorLabel" visible="false" managed="false" wrapText="true" styleClass="error-label" />
+
+                                <HBox spacing="14.0">
+                                    <children>
+                                        <VBox spacing="7.0" HBox.hgrow="ALWAYS">
+                                            <children>
+                                                <Label text="Nome" styleClass="field-label" />
+                                                <TextField fx:id="firstNameField" promptText="Michele" styleClass="input-field" />
+                                            </children>
+                                        </VBox>
+                                        <VBox spacing="7.0" HBox.hgrow="ALWAYS">
+                                            <children>
+                                                <Label text="Cognome" styleClass="field-label" />
+                                                <TextField fx:id="lastNameField" promptText="Rossi" styleClass="input-field" />
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </HBox>
+
+                                <HBox spacing="14.0">
+                                    <children>
+                                        <VBox spacing="7.0" HBox.hgrow="ALWAYS">
+                                            <children>
+                                                <Label text="Email professionale" styleClass="field-label" />
+                                                <TextField fx:id="emailField" promptText="nome@studio.it" styleClass="input-field" />
+                                            </children>
+                                        </VBox>
+                                        <VBox spacing="7.0" HBox.hgrow="ALWAYS">
+                                            <children>
+                                                <Label text="Conferma email" styleClass="field-label" />
+                                                <TextField fx:id="confirmEmailField" promptText="Ripeti email" styleClass="input-field" />
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </HBox>
+
+                                <Label fx:id="emailWarningLabel" visible="false" managed="false"
+                                       text="Le email non coincidono." styleClass="inline-warning-label" />
+
+                                <VBox spacing="7.0">
+                                    <children>
+                                        <Label text="Nome studio" styleClass="field-label" />
+                                        <TextField fx:id="studioNameField" promptText="Studio Fisioterapia Fisioarea" styleClass="input-field" />
+                                    </children>
+                                </VBox>
+
+                                <HBox spacing="14.0">
+                                    <children>
+                                        <VBox spacing="7.0" HBox.hgrow="ALWAYS">
+                                            <children>
+                                                <Label text="Telefono" styleClass="field-label" />
+                                                <TextField fx:id="phoneField" promptText="+39 000 000 0000" styleClass="input-field" />
+                                            </children>
+                                        </VBox>
+                                        <VBox spacing="7.0" HBox.hgrow="ALWAYS">
+                                            <children>
+                                                <Label text="Ruolo" styleClass="field-label" />
+                                                <ComboBox fx:id="roleComboBox" promptText="Seleziona" maxWidth="Infinity" styleClass="input-field" />
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </HBox>
+
+                                <HBox spacing="14.0">
+                                    <children>
+                                        <VBox spacing="7.0" HBox.hgrow="ALWAYS">
+                                            <children>
+                                                <Label text="Password" styleClass="field-label" />
+                                                <PasswordField fx:id="passwordField" promptText="Minimo 8 caratteri" styleClass="input-field" />
+                                            </children>
+                                        </VBox>
+                                        <VBox spacing="7.0" HBox.hgrow="ALWAYS">
+                                            <children>
+                                                <Label text="Conferma password" styleClass="field-label" />
+                                                <PasswordField fx:id="confirmPasswordField" promptText="Ripeti password" styleClass="input-field" />
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </HBox>
+
+                                <Label fx:id="passwordWarningLabel" visible="false" managed="false"
+                                       text="Le password non coincidono." styleClass="inline-warning-label" />
+
+                                <CheckBox fx:id="termsCheck" wrapText="true"
+                                          text="Accetto i termini di servizio e l’informativa privacy"
+                                          styleClass="small-text" />
+
+                                <Button fx:id="registerButton" maxWidth="Infinity" mnemonicParsing="false"
+                                        text="Crea account" onAction="#handleRegister" styleClass="primary-button" />
+
+                                <HBox alignment="CENTER" spacing="4.0">
+                                    <children>
+                                        <Label text="Hai già un account?" styleClass="muted-text" />
+                                        <Hyperlink text="Accedi" onAction="#goToLogin" styleClass="text-link" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </center>
+</BorderPane>

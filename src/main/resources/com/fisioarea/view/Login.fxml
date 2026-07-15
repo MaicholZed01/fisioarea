@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="680.0" prefWidth="1040.0"
+            stylesheets="@styles.css"
+            styleClass="auth-root"
+            xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.fisioarea.controller.LoginController">
+
+    <left>
+        <VBox alignment="CENTER_LEFT" prefWidth="430.0" spacing="26.0" styleClass="auth-hero-flat">
+            <padding>
+                <Insets bottom="56.0" left="48.0" right="48.0" top="56.0" />
+            </padding>
+
+            <children>
+                <HBox alignment="CENTER_LEFT" spacing="12.0">
+                    <children>
+                        <Label text="F" styleClass="brand-mark" />
+                        <VBox spacing="0.0">
+                            <children>
+                                <Label text="Fisioarea" styleClass="brand-title-light" />
+                                <Label text="Gestionale fisioterapia" styleClass="brand-subtitle-light" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+
+                <Region VBox.vgrow="ALWAYS" />
+
+                <VBox spacing="14.0">
+                    <children>
+                        <Label text="Gestisci appuntamenti, pazienti e studio in un unico spazio."
+                               wrapText="true" styleClass="hero-title" />
+                        <Label text="Una dashboard pensata per ridurre il lavoro manuale e velocizzare la pianificazione quotidiana."
+                               wrapText="true" styleClass="hero-text" />
+                    </children>
+                </VBox>
+
+                <VBox spacing="12.0">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" spacing="10.0" styleClass="hero-feature">
+                            <children>
+                                <Label text="✓" styleClass="hero-check" />
+                                <Label text="Agenda intelligente e intuitiva" styleClass="hero-feature-text" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="10.0" styleClass="hero-feature">
+                            <children>
+                                <Label text="✓" styleClass="hero-check" />
+                                <Label text="Schede paziente sempre disponibili" styleClass="hero-feature-text" />
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" spacing="10.0" styleClass="hero-feature">
+                            <children>
+                                <Label text="✓" styleClass="hero-check" />
+                                <Label text="Promemoria e gestione appuntamenti" styleClass="hero-feature-text" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+
+                <Region VBox.vgrow="ALWAYS" />
+
+                <Label text="Demo login: admin@fisioarea.it / admin123" styleClass="hero-footer" />
+            </children>
+        </VBox>
+    </left>
+
+    <center>
+        <VBox alignment="CENTER" spacing="26.0" styleClass="auth-form-flat">
+            <padding>
+                <Insets bottom="56.0" left="70.0" right="70.0" top="56.0" />
+            </padding>
+
+            <children>
+                <VBox alignment="CENTER_LEFT" maxWidth="420.0" spacing="8.0">
+                    <children>
+                        <Label text="Bentornato" styleClass="page-title" />
+                        <Label text="Accedi al tuo gestionale Fisioarea" styleClass="page-subtitle" />
+                    </children>
+                </VBox>
+
+                <VBox maxWidth="420.0" spacing="16.0">
+                    <children>
+                        <Label fx:id="errorLabel" visible="false" managed="false" wrapText="true" styleClass="error-label" />
+
+                        <VBox spacing="7.0">
+                            <children>
+                                <Label text="Email" styleClass="field-label" />
+                                <TextField fx:id="emailField" promptText="admin@fisioarea.it" styleClass="input-field" />
+                            </children>
+                        </VBox>
+
+                        <VBox spacing="7.0">
+                            <children>
+                                <Label text="Password" styleClass="field-label" />
+                                <PasswordField fx:id="passwordField" promptText="admin123" styleClass="input-field" />
+                            </children>
+                        </VBox>
+
+                        <HBox alignment="CENTER_LEFT" spacing="12.0">
+                            <children>
+                                <CheckBox fx:id="rememberMeCheck" text="Ricordami" styleClass="small-text" />
+                                <Region HBox.hgrow="ALWAYS" />
+                                <Hyperlink text="Password dimenticata?" styleClass="text-link" />
+                            </children>
+                        </HBox>
+
+                        <Button fx:id="loginButton" maxWidth="Infinity" mnemonicParsing="false" text="Accedi"
+                                onAction="#handleLogin" styleClass="primary-button" />
+
+                        <Separator />
+
+                        <HBox alignment="CENTER" spacing="4.0">
+                            <children>
+                                <Label text="Non hai ancora un account?" styleClass="muted-text" />
+                                <Hyperlink text="Registrati" onAction="#goToRegister" styleClass="text-link" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

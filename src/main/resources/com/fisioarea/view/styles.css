@@ -1,0 +1,1461 @@
+.root {
+    -fx-font-family: "Segoe UI", "Inter", "Arial", sans-serif;
+    -fx-text-fill: #17202a;
+}
+
+.auth-root {
+    -fx-background-color: white;
+}
+
+.dashboard-background {
+    -fx-background-color: #f4f7fb;
+}
+
+/* Auth */
+.auth-hero-flat {
+    -fx-background-color: linear-gradient(to bottom right, #0d9488, #0f766e);
+}
+
+.auth-hero-secondary-flat {
+    -fx-background-color: linear-gradient(to bottom right, #2563eb, #0f766e);
+}
+
+.auth-form-flat {
+    -fx-background-color: white;
+}
+
+.brand-mark {
+    -fx-background-color: rgba(255,255,255,0.2);
+    -fx-text-fill: white;
+    -fx-font-size: 27px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-min-width: 54;
+    -fx-min-height: 54;
+    -fx-background-radius: 16;
+}
+
+.brand-mark-small {
+    -fx-background-color: linear-gradient(to bottom right, #0d9488, #14b8a6);
+    -fx-text-fill: white;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-min-width: 44;
+    -fx-min-height: 44;
+    -fx-background-radius: 14;
+}
+
+.brand-title-light {
+    -fx-text-fill: white;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.brand-subtitle-light {
+    -fx-text-fill: rgba(255,255,255,0.76);
+    -fx-font-size: 12px;
+}
+
+.brand-title-dark {
+    -fx-text-fill: #0f172a;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.brand-subtitle-dark {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 12px;
+}
+
+.hero-title {
+    -fx-text-fill: white;
+    -fx-font-size: 34px;
+    -fx-font-weight: bold;
+}
+
+.hero-text {
+    -fx-text-fill: rgba(255,255,255,0.78);
+    -fx-font-size: 14px;
+    -fx-line-spacing: 3;
+}
+
+.hero-feature {
+    -fx-background-color: rgba(255,255,255,0.12);
+    -fx-background-radius: 14;
+    -fx-padding: 12 14;
+}
+
+.hero-check {
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.hero-feature-text {
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.hero-footer {
+    -fx-text-fill: rgba(255,255,255,0.75);
+    -fx-font-size: 12px;
+}
+
+.step-badge {
+    -fx-background-color: rgba(255,255,255,0.18);
+    -fx-background-radius: 50;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-min-width: 26;
+    -fx-min-height: 26;
+}
+
+.page-title {
+    -fx-text-fill: #0f172a;
+    -fx-font-size: 34px;
+    -fx-font-weight: bold;
+}
+
+.page-subtitle {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 14px;
+}
+
+.field-label {
+    -fx-text-fill: #334155;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.input-field,
+.search-field {
+    -fx-background-color: #f8fafc;
+    -fx-background-radius: 14;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 14;
+    -fx-border-width: 1;
+    -fx-padding: 12 14;
+    -fx-font-size: 14px;
+    -fx-prompt-text-fill: #94a3b8;
+}
+
+.input-field:focused,
+.search-field:focused {
+    -fx-background-color: white;
+    -fx-border-color: #14b8a6;
+    -fx-effect: dropshadow(gaussian, rgba(20, 184, 166, 0.18), 12, 0.1, 0, 3);
+}
+
+.primary-button,
+.primary-button-compact {
+    -fx-background-color: linear-gradient(to right, #0d9488, #14b8a6);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.primary-button {
+    -fx-font-size: 15px;
+    -fx-background-radius: 15;
+    -fx-padding: 14 18;
+}
+
+.primary-button-compact {
+    -fx-font-size: 13px;
+    -fx-background-radius: 13;
+    -fx-padding: 11 16;
+}
+
+.primary-button:hover,
+.primary-button-compact:hover {
+    -fx-background-color: linear-gradient(to right, #0f766e, #0d9488);
+}
+
+.secondary-button {
+    -fx-background-color: white;
+    -fx-text-fill: #0f766e;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    -fx-background-radius: 12;
+    -fx-padding: 10 12;
+    -fx-cursor: hand;
+}
+
+.ghost-button {
+    -fx-background-color: #f8fafc;
+    -fx-text-fill: #334155;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-background-radius: 12;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 12;
+    -fx-padding: 10 14;
+    -fx-cursor: hand;
+}
+
+.ghost-button:hover {
+    -fx-background-color: #eefdfa;
+    -fx-text-fill: #0f766e;
+}
+
+.calendar-nav-button {
+    -fx-background-color: #f8fafc;
+    -fx-text-fill: #334155;
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+    -fx-background-radius: 12;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 12;
+    -fx-min-width: 38;
+    -fx-padding: 6 10;
+    -fx-cursor: hand;
+}
+
+.calendar-nav-button:hover {
+    -fx-background-color: #eefdfa;
+    -fx-text-fill: #0f766e;
+}
+
+.text-link {
+    -fx-text-fill: #0d9488;
+    -fx-font-weight: bold;
+    -fx-border-color: transparent;
+}
+
+.muted-text,
+.small-text {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 13px;
+}
+
+.error-label {
+    -fx-background-color: #fee2e2;
+    -fx-text-fill: #991b1b;
+    -fx-background-radius: 12;
+    -fx-padding: 10 12;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.transparent-scroll,
+.calendar-scroll {
+    -fx-background: transparent;
+    -fx-background-color: transparent;
+}
+
+.transparent-scroll > .viewport,
+.calendar-scroll > .viewport {
+    -fx-background-color: transparent;
+}
+
+/* Dashboard */
+.sidebar {
+    -fx-background-color: white;
+    -fx-border-color: transparent #e2e8f0 transparent transparent;
+    -fx-border-width: 0 1 0 0;
+}
+
+.topbar {
+    -fx-background-color: rgba(255,255,255,0.92);
+    -fx-border-color: transparent transparent #e2e8f0 transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.dashboard-content {
+    -fx-background-color: #f4f7fb;
+}
+
+.dashboard-title {
+    -fx-text-fill: #0f172a;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+
+.dashboard-subtitle {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 13px;
+}
+
+.nav-button,
+.nav-button-active {
+    -fx-background-radius: 14;
+    -fx-padding: 13 16;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #64748b;
+}
+
+.nav-button:hover {
+    -fx-background-color: #f1f5f9;
+    -fx-text-fill: #0f766e;
+}
+
+.nav-button-active {
+    -fx-background-color: #e6fffb;
+    -fx-text-fill: #0f766e;
+}
+
+.sidebar-card {
+    -fx-background-color: linear-gradient(to bottom right, #0d9488, #14b8a6);
+    -fx-background-radius: 18;
+    -fx-padding: 18;
+}
+
+.sidebar-card-label {
+    -fx-text-fill: rgba(255,255,255,0.75);
+    -fx-font-size: 12px;
+}
+
+.sidebar-card-title {
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.sidebar-card-text {
+    -fx-text-fill: rgba(255,255,255,0.78);
+    -fx-font-size: 12px;
+}
+
+.user-chip {
+    -fx-background-color: #f8fafc;
+    -fx-background-radius: 16;
+    -fx-padding: 8 12;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 16;
+    -fx-cursor: hand;
+}
+
+.user-chip:hover {
+    -fx-background-color: #eefdfa;
+    -fx-border-color: #99f6e4;
+}
+
+.avatar,
+.patient-avatar {
+    -fx-background-color: #e6fffb;
+    -fx-text-fill: #0f766e;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-background-radius: 50;
+}
+
+.avatar {
+    -fx-min-width: 38;
+    -fx-min-height: 38;
+}
+
+.patient-avatar {
+    -fx-min-width: 42;
+    -fx-min-height: 42;
+}
+
+.user-name {
+    -fx-text-fill: #0f172a;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.user-role {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 11px;
+}
+
+.section-title {
+    -fx-text-fill: #0f172a;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.section-title-large {
+    -fx-text-fill: #0f172a;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.section-subtitle {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 12px;
+}
+
+.date-picker-clean {
+    -fx-background-color: #f8fafc;
+    -fx-background-radius: 13;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 13;
+}
+
+/* Calendar / Agenda */
+.calendar-grid {
+    -fx-background-color: white;
+    -fx-background-radius: 22;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 22;
+    -fx-padding: 0;
+    -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.06), 18, 0.12, 0, 6);
+}
+
+.calendar-time-label {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-background-color: #f8fafc;
+    -fx-border-color: transparent #e2e8f0 #eef2f7 transparent;
+    -fx-border-width: 0 1 1 0;
+}
+
+.calendar-slot {
+    -fx-background-color: white;
+    -fx-border-color: transparent transparent #eef2f7 transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.calendar-slot:hover {
+    -fx-background-color: #fbfefe;
+    -fx-cursor: hand;
+}
+
+.calendar-event-card {
+    -fx-background-color: linear-gradient(to right, #e6fffb, #eff6ff);
+    -fx-background-radius: 14;
+    -fx-border-color: #99f6e4;
+    -fx-border-radius: 14;
+    -fx-border-width: 1;
+    -fx-padding: 10 12;
+    -fx-cursor: hand;
+}
+
+.calendar-event-card:hover {
+    -fx-effect: dropshadow(gaussian, rgba(20, 184, 166, 0.18), 14, 0.12, 0, 4);
+    -fx-translate-y: -1;
+}
+
+.calendar-event-time {
+    -fx-text-fill: #0f766e;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.calendar-event-title {
+    -fx-text-fill: #0f172a;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.calendar-event-subtitle {
+    -fx-text-fill: #475569;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.calendar-event-status {
+    -fx-background-color: white;
+    -fx-background-radius: 999;
+    -fx-text-fill: #0f766e;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-padding: 4 9;
+}
+
+.calendar-event-attachment {
+    -fx-text-fill: #2563eb;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.dialog-details {
+    -fx-text-fill: #334155;
+    -fx-font-size: 14px;
+    -fx-line-spacing: 4;
+}
+
+.appointment-image-preview {
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.12), 12, 0.08, 0, 4);
+    -fx-cursor: hand;
+}
+
+.image-preview-wrapper {
+    -fx-background-color: #f8fafc;
+    -fx-background-radius: 16;
+}
+
+/* Profile */
+.profile-card {
+    -fx-background-color: white;
+    -fx-background-radius: 22;
+    -fx-padding: 24;
+    -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.06), 18, 0.12, 0, 6);
+    -fx-border-color: rgba(226,232,240,0.9);
+    -fx-border-radius: 22;
+}
+
+.success-label {
+    -fx-background-color: #dcfce7;
+    -fx-text-fill: #166534;
+    -fx-background-radius: 12;
+    -fx-padding: 10 12;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+/* Admin user management */
+.panel-card {
+    -fx-background-color: white;
+    -fx-background-radius: 22;
+    -fx-padding: 22;
+    -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.06), 18, 0.12, 0, 6);
+    -fx-border-color: rgba(226,232,240,0.9);
+    -fx-border-radius: 22;
+}
+
+.clean-table {
+    -fx-background-color: transparent;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 16;
+    -fx-background-radius: 16;
+}
+
+.clean-table .column-header-background {
+    -fx-background-color: #f8fafc;
+    -fx-background-radius: 16 16 0 0;
+}
+
+.clean-table .column-header,
+.clean-table .filler {
+    -fx-background-color: transparent;
+    -fx-size: 44;
+}
+
+.clean-table .column-header .label {
+    -fx-text-fill: #475569;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+
+.clean-table .table-row-cell {
+    -fx-background-color: white;
+    -fx-border-color: transparent transparent #f1f5f9 transparent;
+    -fx-padding: 6 0;
+}
+
+.clean-table .table-row-cell:selected {
+    -fx-background-color: #e6fffb;
+}
+
+.success-label {
+    -fx-text-fill: #059669;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.error-text {
+    -fx-text-fill: #dc2626;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.danger-button {
+    -fx-background-color: #fee2e2;
+    -fx-text-fill: #991b1b;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-background-radius: 12;
+    -fx-border-color: #fecaca;
+    -fx-border-radius: 12;
+    -fx-padding: 10 14;
+    -fx-cursor: hand;
+}
+
+.danger-button:hover {
+    -fx-background-color: #fecaca;
+}
+
+/* Profile role readonly */
+.readonly-role-chip {
+    -fx-background-color: #e6fffb;
+    -fx-background-radius: 14;
+    -fx-text-fill: #0f766e;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 12 14;
+    -fx-border-color: #99f6e4;
+    -fx-border-radius: 14;
+}
+
+.field-help-text {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+/* =========================================================
+   FISIOAREA - MODERN FORM SYSTEM
+   JavaFX-compatible, single source of truth.
+   Used by:
+   - nuovo/modifica appuntamento
+   - nuova/modifica scheda paziente
+   - visualizzazione scheda paziente
+   - nuovo/modifica profilo utente admin
+   ========================================================= */
+
+/* Dialog shell */
+.dialog-pane.modern-dialog-pane {
+    -fx-background-color: white;
+    -fx-background-radius: 24;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+}
+
+.dialog-pane.modern-dialog-pane > .content {
+    -fx-background-color: white;
+    -fx-padding: 0;
+}
+
+/* Hidden JavaFX button bar: the real actions are inside the custom layout */
+.dialog-pane.modern-dialog-pane > .button-bar,
+.dialog-pane.modern-dialog-pane > .button-bar > .container,
+.dialog-pane.modern-dialog-pane .button-bar,
+.dialog-pane.modern-dialog-pane .button-bar > .container {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-pref-height: 0;
+    -fx-min-height: 0;
+    -fx-max-height: 0;
+    -fx-opacity: 0;
+}
+
+.dialog-pane.modern-dialog-pane .button-bar .button {
+    -fx-padding: 0;
+    -fx-pref-width: 0;
+    -fx-pref-height: 0;
+    -fx-min-width: 0;
+    -fx-min-height: 0;
+    -fx-max-width: 0;
+    -fx-max-height: 0;
+    -fx-opacity: 0;
+}
+
+/* Register/Login style two-column dialog */
+.register-dialog-layout {
+    -fx-background-color: white;
+    -fx-background-radius: 24;
+    -fx-padding: 0;
+    -fx-spacing: 0;
+}
+
+.register-dialog-hero {
+    -fx-background-color: linear-gradient(to bottom right, #0f766e, #14b8a6);
+    -fx-background-radius: 24 0 0 24;
+    -fx-padding: 30 30;
+    -fx-min-width: 340;
+    -fx-pref-width: 340;
+    -fx-max-width: 340;
+}
+
+.register-dialog-form-panel {
+    -fx-background-color: #f8fafc;
+    -fx-background-radius: 0 24 24 0;
+    -fx-padding: 30 38 26 38;
+    -fx-min-width: 650;
+    -fx-pref-width: 720;
+}
+
+/* Form header */
+.register-style-form-title {
+    -fx-text-fill: #0f172a;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.register-style-form-subtitle {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+/* Cards */
+.register-style-card,
+.modern-form-card,
+.clinical-section {
+    -fx-background-color: white;
+    -fx-background-radius: 22;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 22;
+    -fx-padding: 18;
+    -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.08), 18, 0.12, 0, 6);
+}
+
+.register-style-card-title,
+.modern-form-card-title,
+.clinical-section-title {
+    -fx-text-fill: #0f172a;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+}
+
+/* Rows and stacks */
+.register-form-stack {
+    -fx-background-color: transparent;
+    -fx-spacing: 12;
+}
+
+.register-form-row {
+    -fx-background-color: transparent;
+    -fx-spacing: 14;
+}
+
+.register-dialog-actions {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-spacing: 12;
+}
+
+/* Fields */
+.dialog-pane.modern-dialog-pane .field-label,
+.field-label {
+    -fx-text-fill: #334155;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.dialog-pane.modern-dialog-pane .input-field,
+.dialog-pane.modern-dialog-pane .text-field,
+.dialog-pane.modern-dialog-pane .password-field,
+.dialog-pane.modern-dialog-pane .combo-box,
+.dialog-pane.modern-dialog-pane .date-picker,
+.input-field {
+    -fx-background-color: white;
+    -fx-background-radius: 13;
+    -fx-border-color: #dbeafe;
+    -fx-border-radius: 13;
+    -fx-border-width: 1;
+    -fx-padding: 10 12;
+    -fx-font-size: 13px;
+    -fx-text-fill: #0f172a;
+    -fx-prompt-text-fill: #94a3b8;
+}
+
+.dialog-pane.modern-dialog-pane .text-area,
+.text-area.input-field {
+    -fx-background-color: white;
+    -fx-background-radius: 13;
+    -fx-border-color: #dbeafe;
+    -fx-border-radius: 13;
+    -fx-border-width: 1;
+    -fx-font-size: 13px;
+    -fx-text-fill: #0f172a;
+    -fx-prompt-text-fill: #94a3b8;
+}
+
+.dialog-pane.modern-dialog-pane .text-area .content,
+.text-area.input-field .content {
+    -fx-background-color: white;
+    -fx-background-radius: 13;
+}
+
+.dialog-pane.modern-dialog-pane .text-field:focused,
+.dialog-pane.modern-dialog-pane .password-field:focused,
+.dialog-pane.modern-dialog-pane .combo-box:focused,
+.dialog-pane.modern-dialog-pane .date-picker:focused,
+.dialog-pane.modern-dialog-pane .text-area:focused {
+    -fx-background-color: white;
+    -fx-border-color: #14b8a6;
+    -fx-effect: dropshadow(gaussian, rgba(20,184,166,0.18), 12, 0.15, 0, 0);
+}
+
+/* Tabs */
+.register-form-tabs,
+.modern-form-tabs {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-tab-min-height: 40;
+}
+
+.register-form-tabs .tab-header-area,
+.modern-form-tabs .tab-header-area {
+    -fx-background-color: transparent;
+    -fx-padding: 0 0 12 0;
+}
+
+.register-form-tabs .tab-header-background,
+.register-form-tabs .headers-region,
+.register-form-tabs .tab-content-area,
+.modern-form-tabs .tab-header-background,
+.modern-form-tabs .headers-region,
+.modern-form-tabs .tab-content-area {
+    -fx-background-color: transparent;
+}
+
+.register-form-tabs .tab,
+.modern-form-tabs .tab {
+    -fx-background-color: #e2e8f0;
+    -fx-background-radius: 14;
+    -fx-padding: 8 16;
+}
+
+.register-form-tabs .tab:selected,
+.modern-form-tabs .tab:selected {
+    -fx-background-color: #0f766e;
+}
+
+.register-form-tabs .tab .tab-label,
+.modern-form-tabs .tab .tab-label {
+    -fx-text-fill: #334155;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+
+.register-form-tabs .tab:selected .tab-label,
+.modern-form-tabs .tab:selected .tab-label {
+    -fx-text-fill: white;
+}
+
+.register-tab-content,
+.modern-tab-content {
+    -fx-background-color: transparent;
+    -fx-padding: 14 0 0 0;
+}
+
+/* Hero / left panel */
+.patient-sheet-brand-mark {
+    -fx-background-color: rgba(255,255,255,0.22);
+    -fx-background-radius: 16;
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-min-width: 58;
+    -fx-min-height: 58;
+    -fx-alignment: center;
+}
+
+.patient-sheet-brand-title {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.patient-sheet-brand-subtitle {
+    -fx-text-fill: rgba(255,255,255,0.85);
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.patient-sheet-left-title {
+    -fx-text-fill: white;
+    -fx-font-size: 23px;
+    -fx-font-weight: bold;
+}
+
+.patient-sheet-left-description {
+    -fx-text-fill: rgba(255,255,255,0.88);
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-line-spacing: 5;
+}
+
+.patient-sheet-step {
+    -fx-background-color: rgba(255,255,255,0.14);
+    -fx-background-radius: 15;
+    -fx-padding: 10 12;
+}
+
+.patient-sheet-step-number {
+    -fx-background-color: rgba(255,255,255,0.22);
+    -fx-background-radius: 999;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-min-width: 28;
+    -fx-min-height: 28;
+    -fx-alignment: center;
+}
+
+.patient-sheet-step-text {
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.patient-sheet-left-footer {
+    -fx-text-fill: rgba(255,255,255,0.78);
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+/* Patient sheet viewer */
+.patient-sheet-root {
+    -fx-background-color: white;
+    -fx-background-radius: 24;
+    -fx-padding: 0;
+    -fx-spacing: 0;
+}
+
+.patient-sheet-left-panel {
+    -fx-background-color: linear-gradient(to bottom right, #0f766e, #14b8a6);
+    -fx-background-radius: 24 0 0 24;
+    -fx-padding: 30 30;
+    -fx-min-width: 340;
+    -fx-pref-width: 340;
+    -fx-max-width: 340;
+}
+
+.patient-sheet-main-content {
+    -fx-background-color: #f8fafc;
+    -fx-background-radius: 0 24 24 0;
+    -fx-padding: 30 38 28 38;
+}
+
+.patient-sheet-title {
+    -fx-text-fill: #0f172a;
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+}
+
+.patient-sheet-subtitle {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.patient-sheet-close-button {
+    -fx-background-color: #e2e8f0;
+    -fx-background-radius: 14;
+    -fx-text-fill: #334155;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 12 20;
+    -fx-cursor: hand;
+}
+
+.patient-sheet-close-button:hover {
+    -fx-background-color: #cbd5e1;
+}
+
+.patient-sheet-scroll,
+.dialog-pane.modern-dialog-pane .scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+    -fx-padding: 0;
+}
+
+.patient-sheet-scroll > .viewport,
+.dialog-pane.modern-dialog-pane .scroll-pane > .viewport,
+.dialog-pane.modern-dialog-pane .scroll-pane > .corner {
+    -fx-background-color: transparent;
+}
+
+.sheet-field-label {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.sheet-field-value {
+    -fx-text-fill: #1e293b;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-line-spacing: 4;
+}
+
+.modern-helper-text {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+/* =========================================================
+   FISIOAREA - MODERN FORM CLASS BRIDGE
+   Fix for mixed old/new dialog styles.
+   This block covers all class names used across previous patches.
+   ========================================================= */
+
+/* Two-column dialog shell */
+.dialog-pane.modern-dialog-pane,
+.dialog-pane.modern-dialog-pane > .content {
+    -fx-background-color: white;
+    -fx-background-radius: 24;
+    -fx-padding: 0;
+}
+
+.dialog-pane.modern-dialog-pane > .button-bar,
+.dialog-pane.modern-dialog-pane > .button-bar > .container,
+.dialog-pane.modern-dialog-pane .button-bar,
+.dialog-pane.modern-dialog-pane .button-bar > .container {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-pref-height: 0;
+    -fx-min-height: 0;
+    -fx-max-height: 0;
+    -fx-opacity: 0;
+}
+
+.dialog-pane.modern-dialog-pane .button-bar .button {
+    -fx-padding: 0;
+    -fx-pref-width: 0;
+    -fx-pref-height: 0;
+    -fx-min-width: 0;
+    -fx-min-height: 0;
+    -fx-max-width: 0;
+    -fx-max-height: 0;
+    -fx-opacity: 0;
+}
+
+/* Root panels */
+.dialog-pane.modern-dialog-pane .register-dialog-layout {
+    -fx-background-color: white;
+    -fx-background-radius: 24;
+    -fx-padding: 0;
+    -fx-spacing: 0;
+}
+
+.dialog-pane.modern-dialog-pane .register-dialog-hero,
+.dialog-pane.modern-dialog-pane .patient-sheet-left-panel,
+.dialog-pane.modern-dialog-pane .register-style-left-panel {
+    -fx-background-color: linear-gradient(to bottom right, #0f766e, #14b8a6);
+    -fx-background-radius: 24 0 0 24;
+    -fx-padding: 30 30;
+    -fx-min-width: 340;
+    -fx-pref-width: 340;
+    -fx-max-width: 340;
+}
+
+.dialog-pane.modern-dialog-pane .register-dialog-form-panel,
+.dialog-pane.modern-dialog-pane .patient-sheet-main-content,
+.dialog-pane.modern-dialog-pane .register-style-right-panel {
+    -fx-background-color: #f8fafc;
+    -fx-background-radius: 0 24 24 0;
+    -fx-padding: 30 38 26 38;
+}
+
+/* Left panel brand */
+.dialog-pane.modern-dialog-pane .brand-mark,
+.dialog-pane.modern-dialog-pane .patient-sheet-brand-mark {
+    -fx-background-color: rgba(255,255,255,0.22);
+    -fx-background-radius: 16;
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-min-width: 58;
+    -fx-min-height: 58;
+    -fx-alignment: center;
+}
+
+.dialog-pane.modern-dialog-pane .brand-title-light,
+.dialog-pane.modern-dialog-pane .patient-sheet-brand-title {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.dialog-pane.modern-dialog-pane .brand-subtitle-light,
+.dialog-pane.modern-dialog-pane .patient-sheet-brand-subtitle {
+    -fx-text-fill: #ccfbf1;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+/* Left panel copy - covers old and new class names */
+.dialog-pane.modern-dialog-pane .register-dialog-hero-title,
+.dialog-pane.modern-dialog-pane .patient-sheet-left-title,
+.dialog-pane.modern-dialog-pane .register-style-left-title,
+.dialog-pane.modern-dialog-pane .hero-title {
+    -fx-text-fill: white;
+    -fx-font-size: 23px;
+    -fx-font-weight: bold;
+}
+
+.dialog-pane.modern-dialog-pane .register-dialog-hero-text,
+.dialog-pane.modern-dialog-pane .patient-sheet-left-description,
+.dialog-pane.modern-dialog-pane .register-style-left-subtitle,
+.dialog-pane.modern-dialog-pane .hero-text {
+    -fx-text-fill: #ecfeff;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-line-spacing: 5;
+}
+
+.dialog-pane.modern-dialog-pane .hero-footer,
+.dialog-pane.modern-dialog-pane .patient-sheet-left-footer,
+.dialog-pane.modern-dialog-pane .register-style-footer {
+    -fx-text-fill: #ccfbf1;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+/* Left panel steps */
+.dialog-pane.modern-dialog-pane .register-dialog-step,
+.dialog-pane.modern-dialog-pane .patient-sheet-step,
+.dialog-pane.modern-dialog-pane .register-style-step {
+    -fx-background-color: rgba(255,255,255,0.14);
+    -fx-background-radius: 15;
+    -fx-padding: 10 12;
+}
+
+.dialog-pane.modern-dialog-pane .step-badge,
+.dialog-pane.modern-dialog-pane .patient-sheet-step-number,
+.dialog-pane.modern-dialog-pane .register-style-step-number {
+    -fx-background-color: rgba(255,255,255,0.22);
+    -fx-background-radius: 999;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-min-width: 28;
+    -fx-min-height: 28;
+    -fx-alignment: center;
+}
+
+.dialog-pane.modern-dialog-pane .hero-feature-text,
+.dialog-pane.modern-dialog-pane .patient-sheet-step-text,
+.dialog-pane.modern-dialog-pane .register-style-step-text {
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+/* Main titles */
+.dialog-pane.modern-dialog-pane .page-title,
+.dialog-pane.modern-dialog-pane .register-style-form-title,
+.dialog-pane.modern-dialog-pane .patient-sheet-title {
+    -fx-text-fill: #0f172a;
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+}
+
+.dialog-pane.modern-dialog-pane .page-subtitle,
+.dialog-pane.modern-dialog-pane .register-style-form-subtitle,
+.dialog-pane.modern-dialog-pane .patient-sheet-subtitle {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+/* Cards */
+.dialog-pane.modern-dialog-pane .register-dialog-card,
+.dialog-pane.modern-dialog-pane .register-style-card,
+.dialog-pane.modern-dialog-pane .modern-form-card,
+.dialog-pane.modern-dialog-pane .clinical-section {
+    -fx-background-color: white;
+    -fx-background-radius: 22;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 22;
+    -fx-padding: 18;
+    -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.08), 18, 0.12, 0, 6);
+}
+
+.dialog-pane.modern-dialog-pane .section-title-large,
+.dialog-pane.modern-dialog-pane .register-style-card-title,
+.dialog-pane.modern-dialog-pane .modern-form-card-title,
+.dialog-pane.modern-dialog-pane .clinical-section-title {
+    -fx-text-fill: #0f172a;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+/* Rows */
+.dialog-pane.modern-dialog-pane .register-form-stack {
+    -fx-background-color: transparent;
+    -fx-spacing: 12;
+}
+
+.dialog-pane.modern-dialog-pane .register-form-row {
+    -fx-background-color: transparent;
+    -fx-spacing: 14;
+}
+
+.dialog-pane.modern-dialog-pane .register-dialog-actions {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-spacing: 12;
+}
+
+/* Fields */
+.dialog-pane.modern-dialog-pane .field-label {
+    -fx-text-fill: #334155;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.dialog-pane.modern-dialog-pane .input-field,
+.dialog-pane.modern-dialog-pane .text-field,
+.dialog-pane.modern-dialog-pane .password-field,
+.dialog-pane.modern-dialog-pane .combo-box,
+.dialog-pane.modern-dialog-pane .date-picker {
+    -fx-background-color: white;
+    -fx-background-radius: 13;
+    -fx-border-color: #dbeafe;
+    -fx-border-radius: 13;
+    -fx-border-width: 1;
+    -fx-padding: 10 12;
+    -fx-font-size: 13px;
+    -fx-text-fill: #0f172a;
+    -fx-prompt-text-fill: #94a3b8;
+}
+
+.dialog-pane.modern-dialog-pane .text-area {
+    -fx-background-color: white;
+    -fx-background-radius: 13;
+    -fx-border-color: #dbeafe;
+    -fx-border-radius: 13;
+    -fx-border-width: 1;
+    -fx-font-size: 13px;
+    -fx-text-fill: #0f172a;
+    -fx-prompt-text-fill: #94a3b8;
+}
+
+.dialog-pane.modern-dialog-pane .text-area .content {
+    -fx-background-color: white;
+    -fx-background-radius: 13;
+}
+
+.dialog-pane.modern-dialog-pane .text-field:focused,
+.dialog-pane.modern-dialog-pane .password-field:focused,
+.dialog-pane.modern-dialog-pane .combo-box:focused,
+.dialog-pane.modern-dialog-pane .date-picker:focused,
+.dialog-pane.modern-dialog-pane .text-area:focused {
+    -fx-background-color: white;
+    -fx-border-color: #14b8a6;
+    -fx-effect: dropshadow(gaussian, rgba(20,184,166,0.18), 12, 0.15, 0, 0);
+}
+
+/* Tabs - high specificity to override JavaFX default tabs */
+.dialog-pane.modern-dialog-pane .register-form-tabs,
+.dialog-pane.modern-dialog-pane .modern-form-tabs {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-tab-min-height: 40;
+}
+
+.dialog-pane.modern-dialog-pane .register-form-tabs .tab-header-area,
+.dialog-pane.modern-dialog-pane .modern-form-tabs .tab-header-area {
+    -fx-background-color: transparent;
+    -fx-padding: 0 0 12 0;
+}
+
+.dialog-pane.modern-dialog-pane .register-form-tabs .tab-header-background,
+.dialog-pane.modern-dialog-pane .register-form-tabs .headers-region,
+.dialog-pane.modern-dialog-pane .register-form-tabs .tab-content-area,
+.dialog-pane.modern-dialog-pane .modern-form-tabs .tab-header-background,
+.dialog-pane.modern-dialog-pane .modern-form-tabs .headers-region,
+.dialog-pane.modern-dialog-pane .modern-form-tabs .tab-content-area {
+    -fx-background-color: transparent;
+}
+
+.dialog-pane.modern-dialog-pane .register-form-tabs .tab,
+.dialog-pane.modern-dialog-pane .modern-form-tabs .tab {
+    -fx-background-color: #e2e8f0;
+    -fx-background-radius: 14;
+    -fx-padding: 8 16;
+}
+
+.dialog-pane.modern-dialog-pane .register-form-tabs .tab:selected,
+.dialog-pane.modern-dialog-pane .modern-form-tabs .tab:selected {
+    -fx-background-color: #0f766e;
+}
+
+.dialog-pane.modern-dialog-pane .register-form-tabs .tab .tab-label,
+.dialog-pane.modern-dialog-pane .modern-form-tabs .tab .tab-label {
+    -fx-text-fill: #334155;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+
+.dialog-pane.modern-dialog-pane .register-form-tabs .tab:selected .tab-label,
+.dialog-pane.modern-dialog-pane .modern-form-tabs .tab:selected .tab-label {
+    -fx-text-fill: white;
+}
+
+.dialog-pane.modern-dialog-pane .register-tab-content,
+.dialog-pane.modern-dialog-pane .modern-tab-content {
+    -fx-background-color: transparent;
+    -fx-padding: 14 0 0 0;
+}
+
+/* Patient sheet viewer */
+.dialog-pane.modern-dialog-pane .patient-sheet-root {
+    -fx-background-color: white;
+    -fx-background-radius: 24;
+    -fx-padding: 0;
+    -fx-spacing: 0;
+}
+
+.dialog-pane.modern-dialog-pane .patient-sheet-scroll,
+.dialog-pane.modern-dialog-pane .scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+    -fx-padding: 0;
+}
+
+.dialog-pane.modern-dialog-pane .patient-sheet-scroll > .viewport,
+.dialog-pane.modern-dialog-pane .scroll-pane > .viewport,
+.dialog-pane.modern-dialog-pane .scroll-pane > .corner {
+    -fx-background-color: transparent;
+}
+
+.dialog-pane.modern-dialog-pane .sheet-field-label {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.dialog-pane.modern-dialog-pane .sheet-field-value {
+    -fx-text-fill: #1e293b;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-line-spacing: 4;
+}
+
+.dialog-pane.modern-dialog-pane .patient-sheet-close-button {
+    -fx-background-color: #e2e8f0;
+    -fx-background-radius: 14;
+    -fx-text-fill: #334155;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 12 20;
+    -fx-cursor: hand;
+}
+
+.dialog-pane.modern-dialog-pane .patient-sheet-close-button:hover {
+    -fx-background-color: #cbd5e1;
+}
+
+.dialog-pane.modern-dialog-pane .modern-helper-text {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+/* =========================================================
+   FISIOAREA - AGENDA IMPROVED OVERLAP
+   Mantiene visibili più appuntamenti nella stessa fascia oraria.
+   ========================================================= */
+
+.calendar-slot {
+    -fx-background-color: white;
+    -fx-background-radius: 18;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 18;
+    -fx-border-width: 1;
+}
+
+.calendar-slot-count {
+    -fx-background-color: #ecfeff;
+    -fx-background-radius: 999;
+    -fx-text-fill: #0f766e;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-padding: 5 10;
+}
+
+.calendar-event-card {
+    -fx-background-color: linear-gradient(to right, #f0fdfa, #ffffff);
+    -fx-background-radius: 16;
+    -fx-border-color: #ccfbf1;
+    -fx-border-radius: 16;
+    -fx-border-width: 1;
+    -fx-padding: 10 12;
+    -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.06), 12, 0.12, 0, 4);
+}
+
+.calendar-event-card:hover {
+    -fx-background-color: #ecfeff;
+    -fx-border-color: #14b8a6;
+    -fx-cursor: hand;
+}
+
+.calendar-event-time {
+    -fx-background-color: #0f766e;
+    -fx-background-radius: 999;
+    -fx-text-fill: white;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-padding: 4 8;
+}
+
+.calendar-event-title {
+    -fx-text-fill: #0f172a;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.calendar-event-subtitle {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 12px;
+}
+
+.calendar-event-status {
+    -fx-background-color: #dbeafe;
+    -fx-background-radius: 999;
+    -fx-text-fill: #1e40af;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-padding: 4 8;
+}
+
+.calendar-event-attachment {
+    -fx-text-fill: #0f766e;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+/* =========================================================
+   FISIOAREA - MODERN CONFIRMATION POPUPS
+   Popup moderni uniformi per eliminazioni e conferme critiche.
+   ========================================================= */
+
+.dialog-pane.modern-dialog-pane .confirmation-detail-value,
+.dialog-pane.modern-dialog-pane .appointment-detail-value {
+    -fx-background-color: white;
+    -fx-background-radius: 13;
+    -fx-border-color: #dbeafe;
+    -fx-border-radius: 13;
+    -fx-border-width: 1;
+    -fx-padding: 10 12;
+    -fx-text-fill: #0f172a;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-min-height: 42;
+    -fx-alignment: center-left;
+}
+
+.dialog-pane.modern-dialog-pane .confirmation-warning-box,
+.dialog-pane.modern-dialog-pane .appointment-delete-warning {
+    -fx-background-color: #fff7ed;
+    -fx-background-radius: 14;
+    -fx-border-color: #fed7aa;
+    -fx-border-radius: 14;
+    -fx-border-width: 1;
+    -fx-padding: 14;
+    -fx-text-fill: #9a3412;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.dialog-pane.modern-dialog-pane .danger-button,
+.danger-button {
+    -fx-background-color: #fee2e2;
+    -fx-text-fill: #991b1b;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-background-radius: 13;
+    -fx-border-color: #fecaca;
+    -fx-border-radius: 13;
+    -fx-border-width: 1;
+    -fx-padding: 11 16;
+    -fx-cursor: hand;
+}
+
+.dialog-pane.modern-dialog-pane .danger-button:hover,
+.danger-button:hover {
+    -fx-background-color: #fecaca;
+    -fx-border-color: #fca5a5;
+}

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="760.0" prefWidth="1240.0"
+            stylesheets="@styles.css"
+            styleClass="dashboard-background"
+            xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.fisioarea.controller.ProfileController">
+
+    <left>
+        <VBox prefWidth="260.0" spacing="22.0" styleClass="sidebar">
+            <padding>
+                <Insets bottom="26.0" left="22.0" right="22.0" top="26.0" />
+            </padding>
+
+            <children>
+                <HBox alignment="CENTER_LEFT" spacing="12.0">
+                    <children>
+                        <Label text="F" styleClass="brand-mark-small" />
+                        <VBox spacing="0.0">
+                            <children>
+                                <Label text="Fisioarea" styleClass="brand-title-dark" />
+                                <Label text="Profilo utente" styleClass="brand-subtitle-dark" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+
+                <VBox spacing="8.0">
+                    <children>
+                        <Button alignment="CENTER_LEFT" maxWidth="Infinity" mnemonicParsing="false"
+                                text="  Dashboard" onAction="#handleBackToDashboard" styleClass="nav-button" />
+                        <Button alignment="CENTER_LEFT" maxWidth="Infinity" mnemonicParsing="false"
+                                text="  Profilo" styleClass="nav-button-active" />
+                    </children>
+                </VBox>
+
+                <Region VBox.vgrow="ALWAYS" />
+
+                <VBox spacing="12.0" styleClass="sidebar-card">
+                    <children>
+                        <Label text="Account offline" styleClass="sidebar-card-label" />
+                        <Label text="Dati salvati su file" styleClass="sidebar-card-title" />
+                        <Label text="Le modifiche al profilo vengono salvate localmente nella cartella dati di Fisioarea."
+                               wrapText="true" styleClass="sidebar-card-text" />
+                    </children>
+                </VBox>
+
+                <Button alignment="CENTER_LEFT" maxWidth="Infinity" mnemonicParsing="false"
+                        text="  Esci" onAction="#handleLogout" styleClass="nav-button" />
+            </children>
+        </VBox>
+    </left>
+
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="18.0" styleClass="topbar">
+            <padding>
+                <Insets bottom="18.0" left="28.0" right="28.0" top="18.0" />
+            </padding>
+
+            <children>
+                <VBox spacing="2.0">
+                    <children>
+                        <Label text="Gestione profilo" styleClass="dashboard-title" />
+                        <Label text="Modifica i dati del tuo account e cambia password" styleClass="dashboard-subtitle" />
+                    </children>
+                </VBox>
+
+                <Region HBox.hgrow="ALWAYS" />
+
+                <Button mnemonicParsing="false" text="Torna alla dashboard"
+                        onAction="#handleBackToDashboard" styleClass="ghost-button" />
+            </children>
+        </HBox>
+    </top>
+
+    <center>
+        <ScrollPane fitToWidth="true" hbarPolicy="NEVER" styleClass="transparent-scroll">
+            <content>
+                <VBox spacing="22.0" styleClass="dashboard-content">
+                    <padding>
+                        <Insets bottom="34.0" left="28.0" right="28.0" top="28.0" />
+                    </padding>
+
+                    <children>
+                        <VBox spacing="16.0" styleClass="profile-card">
+                            <children>
+                                <VBox spacing="4.0">
+                                    <children>
+                                        <Label text="Dati profilo" styleClass="section-title-large" />
+                                        <Label text="Aggiorna dati personali, email e informazioni dello studio. Il ruolo è gestito dall’Admin."
+                                               styleClass="section-subtitle" />
+                                    </children>
+                                </VBox>
+
+                                <Label fx:id="profileMessageLabel" visible="false" managed="false" wrapText="true" />
+
+                                <GridPane hgap="16.0" vgap="14.0">
+                                    <children>
+                                        <Label text="Nome" styleClass="field-label" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                        <TextField fx:id="firstNameField" promptText="Nome" styleClass="input-field"
+                                                   GridPane.columnIndex="0" GridPane.rowIndex="1" />
+
+                                        <Label text="Cognome" styleClass="field-label" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                                        <TextField fx:id="lastNameField" promptText="Cognome" styleClass="input-field"
+                                                   GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                                        <Label text="Email" styleClass="field-label" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                                        <TextField fx:id="emailField" promptText="nome@studio.it" styleClass="input-field"
+                                                   GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.columnSpan="2" />
+
+                                        <Label text="Nome studio" styleClass="field-label" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                                        <TextField fx:id="studioNameField" promptText="Nome dello studio" styleClass="input-field"
+                                                   GridPane.columnIndex="0" GridPane.rowIndex="5" GridPane.columnSpan="2" />
+
+                                        <Label text="Telefono" styleClass="field-label" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+                                        <TextField fx:id="phoneField" promptText="+39 000 000 0000" styleClass="input-field"
+                                                   GridPane.columnIndex="0" GridPane.rowIndex="7" />
+
+                                        <Label text="Ruolo" styleClass="field-label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                        <VBox spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                            <children>
+                                                <Label fx:id="roleValueLabel" text="Ruolo" styleClass="readonly-role-chip" />
+                                                <Label text="Il ruolo può essere modificato solo da un Admin nella Gestione utenti."
+                                                       wrapText="true" styleClass="field-help-text" />
+                                            </children>
+                                        </VBox>
+                                    </children>
+
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="ALWAYS" percentWidth="50.0" />
+                                        <ColumnConstraints hgrow="ALWAYS" percentWidth="50.0" />
+                                    </columnConstraints>
+                                </GridPane>
+
+                                <HBox alignment="CENTER_RIGHT">
+                                    <children>
+                                        <Button mnemonicParsing="false" text="Salva profilo"
+                                                onAction="#handleSaveProfile" styleClass="primary-button-compact" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+
+                        <VBox spacing="16.0" styleClass="profile-card">
+                            <children>
+                                <VBox spacing="4.0">
+                                    <children>
+                                        <Label text="Sicurezza" styleClass="section-title-large" />
+                                        <Label text="Cambia la password del tuo account locale."
+                                               styleClass="section-subtitle" />
+                                    </children>
+                                </VBox>
+
+                                <Label fx:id="passwordMessageLabel" visible="false" managed="false" wrapText="true" />
+
+                                <GridPane hgap="16.0" vgap="14.0">
+                                    <children>
+                                        <Label text="Password attuale" styleClass="field-label" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                        <PasswordField fx:id="currentPasswordField" promptText="Password attuale" styleClass="input-field"
+                                                       GridPane.columnIndex="0" GridPane.rowIndex="1" />
+
+                                        <Label text="Nuova password" styleClass="field-label" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                                        <PasswordField fx:id="newPasswordField" promptText="Minimo 8 caratteri, lettere e numeri" styleClass="input-field"
+                                                       GridPane.columnIndex="0" GridPane.rowIndex="3" />
+
+                                        <Label text="Conferma nuova password" styleClass="field-label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                        <PasswordField fx:id="confirmNewPasswordField" promptText="Ripeti nuova password" styleClass="input-field"
+                                                       GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    </children>
+
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="ALWAYS" percentWidth="50.0" />
+                                        <ColumnConstraints hgrow="ALWAYS" percentWidth="50.0" />
+                                    </columnConstraints>
+                                </GridPane>
+
+                                <HBox alignment="CENTER_RIGHT">
+                                    <children>
+                                        <Button mnemonicParsing="false" text="Aggiorna password"
+                                                onAction="#handleChangePassword" styleClass="primary-button-compact" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </center>
+</BorderPane>

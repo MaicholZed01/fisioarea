@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="760.0" prefWidth="1240.0"
+            stylesheets="@styles.css"
+            styleClass="dashboard-background"
+            xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.fisioarea.controller.AdminUsersController">
+
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="18.0" styleClass="topbar">
+            <padding>
+                <Insets bottom="18.0" left="28.0" right="28.0" top="18.0" />
+            </padding>
+
+            <children>
+                <VBox spacing="2.0">
+                    <children>
+                        <Label text="Gestione utenti" styleClass="dashboard-title" />
+                        <Label text="Area Admin per gestire utenti, ruoli e stato email" styleClass="dashboard-subtitle" />
+                    </children>
+                </VBox>
+
+                <Region HBox.hgrow="ALWAYS" />
+
+                <Button mnemonicParsing="false" text="Torna alla dashboard"
+                        onAction="#handleBackToDashboard" styleClass="ghost-button" />
+                <Button mnemonicParsing="false" text="+ Nuovo profilo"
+                        onAction="#handleAddUser" styleClass="primary-button-compact" />
+            </children>
+        </HBox>
+    </top>
+
+    <center>
+        <VBox spacing="18.0" styleClass="dashboard-content">
+            <padding>
+                <Insets bottom="28.0" left="28.0" right="28.0" top="28.0" />
+            </padding>
+
+            <children>
+                <VBox spacing="18.0" styleClass="panel-card" VBox.vgrow="ALWAYS">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" spacing="12.0">
+                            <children>
+                                <VBox spacing="3.0">
+                                    <children>
+                                        <Label text="Tutti i profili" styleClass="section-title-large" />
+                                        <Label text="Crea, modifica, elimina utenti e gestisci i ruoli."
+                                               styleClass="section-subtitle" />
+                                    </children>
+                                </VBox>
+
+                                <Region HBox.hgrow="ALWAYS" />
+
+                                <TextField fx:id="searchField" promptText="Cerca nome, email, ruolo o telefono..."
+                                           prefWidth="330.0" styleClass="search-field" />
+                            </children>
+                        </HBox>
+
+                        <TableView fx:id="usersTable" prefHeight="500.0" styleClass="clean-table" VBox.vgrow="ALWAYS">
+                            <columns>
+                                <TableColumn fx:id="idColumn" prefWidth="70.0" text="ID" />
+                                <TableColumn fx:id="nameColumn" prefWidth="220.0" text="Nome" />
+                                <TableColumn fx:id="emailColumn" prefWidth="250.0" text="Email" />
+                                <TableColumn fx:id="roleColumn" prefWidth="150.0" text="Ruolo" />
+                                <TableColumn fx:id="emailVerifiedColumn" prefWidth="130.0" text="Email" />
+                                <TableColumn fx:id="phoneColumn" prefWidth="170.0" text="Telefono" />
+                            </columns>
+                            <columnResizePolicy>
+                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                            </columnResizePolicy>
+                        </TableView>
+
+                        <HBox alignment="CENTER_LEFT" spacing="12.0">
+                            <children>
+                                <Label fx:id="statusLabel" text="Tutti i profili: 0" styleClass="success-label" />
+
+                                <Region HBox.hgrow="ALWAYS" />
+
+                                <Button fx:id="editButton" mnemonicParsing="false" text="Modifica selezionato"
+                                        onAction="#handleEditUser" styleClass="ghost-button" />
+                                <Button fx:id="deleteButton" mnemonicParsing="false" text="Elimina selezionato"
+                                        onAction="#handleDeleteUser" styleClass="danger-button" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>
