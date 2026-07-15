@@ -10,8 +10,11 @@ $IconPath = Join-Path $RootDir "src\main\resources\com\fisioarea\assets\fisioare
 
 Write-Host "== Fisioarea Windows EXE =="
 
-if (-not $IsWindows) {
-    Write-Error "L'EXE Windows deve essere creato da Windows."
+# Compatibile sia con PowerShell 5.1 sia con PowerShell 7.
+# In GitHub Actions il comando può passare da powershell.exe o pwsh.exe,
+# quindi non usiamo $IsWindows perché in PowerShell 5.1 non esiste.
+if ($env:OS -ne "Windows_NT") {
+    Write-Error "L'EXE Windows deve essere creato da Windows. OS rilevato: $env:OS"
 }
 
 if (-not (Get-Command mvn -ErrorAction SilentlyContinue)) {
