@@ -30,7 +30,7 @@ if (-not (Test-Path $IconPath)) {
     Write-Error "Icona Windows non trovata: $IconPath"
 }
 
-Write-Host "Java:" -NoNewline
+Write-Host "Java:"
 java -version
 Write-Host "jpackage: $(jpackage --version)"
 Write-Host "Maven: $((mvn -version | Select-Object -First 1))"

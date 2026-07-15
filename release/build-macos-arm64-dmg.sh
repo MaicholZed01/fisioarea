@@ -20,14 +20,14 @@ if [[ "$(uname -s)" != "Darwin" ]]; then
 fi
 
 if [[ "$(uname -m)" != "arm64" ]]; then
-  echo "Errore: per chip M serve un Mac Apple Silicon, architettura arm64."
+  echo "Errore: per chip M serve un runner/mac Apple Silicon arm64."
   echo "Architettura rilevata: $(uname -m)"
   exit 1
 fi
 
 command -v mvn >/dev/null 2>&1 || { echo "Errore: Maven non installato."; exit 1; }
 command -v java >/dev/null 2>&1 || { echo "Errore: Java/JDK non installato."; exit 1; }
-command -v jpackage >/dev/null 2>&1 || { echo "Errore: jpackage non trovato. Installa un JDK completo, non solo JRE."; exit 1; }
+command -v jpackage >/dev/null 2>&1 || { echo "Errore: jpackage non trovato. Installa un JDK completo."; exit 1; }
 
 if [[ ! -f "$ICON_PATH" ]]; then
   echo "Errore: icona macOS non trovata: $ICON_PATH"
